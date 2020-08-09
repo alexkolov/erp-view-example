@@ -1,0 +1,74 @@
+.order {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 3px solid purple;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 24px;
+
+  &:hover {
+    background: khaki;
+  }
+
+  h4 {
+    margin-bottom: 8px;
+  }
+
+  h5 {
+    color: darkgray;
+    margin: 0 0 32px;
+  }
+
+  .indicators {
+    position: relative;
+    z-index: 200;
+    display: flex;
+    margin-bottom: 16px;
+    color: white;
+
+    div {
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .preparation {
+      background-color: darkorange;
+    }
+
+    .progress {
+      display: flex;
+
+      .produced {
+        background-color: darkGreen;
+      }
+
+      .rest {
+        background-color: lightGreen;
+      }
+    }
+  }
+
+  .material {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 8px;
+    font-weight: 500;
+
+    .icon {
+      margin-left: 8px;
+
+      &.ok {
+        color: darkGreen;
+      }
+
+      &.error {
+        color: red;
+      }
+    }
+  }
+
+  .amount {
+    font-weight: 500;
+  }
+}

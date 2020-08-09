@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+
+.machines {
+  margin-left: 16px;
+
+  .machine {
+    display: flex;
+    border: 1px solid lightgrey;
+    margin-bottom: 24px;
+
+    .description {
+      box-sizing: border-box;
+      padding: 24px;
+      width: $description-width;
+      margin-right: 8px;
+
+      h4.title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+
+        .circle {
+          height: 24px;
+          width: 24px;
+          min-height: 24px;
+          min-width: 24px;
+          margin: 0 0 0 4px;
+          border-radius: 100%;
+
+          &.producing {
+            background-color: green;
+          }
+
+          &.preparing {
+            background-color: yellow;
+          }
+
+          &.error {
+            background-color: red;
+          }
+        }
+      }
+
+      .shift-select {
+        margin: 8px 0 16px;
+        width: 100%;
+      }
+
+      .next-maintenance {
+        font-size: 80%;
+        margin-bottom: 8px;
+
+        .date {
+          color: darkgray;
+          padding-left: 4px;
+        }
+      }
+
+      a {
+        font-size: 80%;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@import 'variables';
+
+.app {
+  min-width: #{ $min-day-width * 3 + 600 };
+}

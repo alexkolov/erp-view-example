@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 40px;
+  margin-left: $description-width;
+
+  .control {
+    min-width: 340px;
+    margin-right: 32px;
+
+    &.date {
+      .label {
+        color: darkgray;
+        font-weight: 500;
+      }
+    }
+
+    .label {
+      display: inline-block;
+      height: 32px;
+      margin-right: 16px;
+      padding-top: 8px;
+    }
+
+    select {
+      width: 160px;
+    }
+  }
+}
