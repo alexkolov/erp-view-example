@@ -19,10 +19,12 @@ Example of an ERP view written in React &amp; Material-UI
 ## how to start?
 - npm install
 - npm start
+- browser opens automatically
 
 ## how to run e2e tests?
 - implemented with Nightwatch
 - npm install nightwatch -g
+- npm install
 - npm start
 - nightwatch
 - the report is shown on stdout and in folder tests_output
